@@ -1,20 +1,42 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
     <title>HTML help</title>
   </head>
   <body>
     <div class="container">
-      <h1>HTML help</h1>
+      <h1>Peek-a-boo</h1>
+        <p><strong>Peek-a-boo</strong> is an ancient game riddled in mystery and deceit. Though it appears to be an innocent children's pastime, you may change your mind when you learn of its treacherous history.</p>
 
-      <p>This is a very special page. If you click somewhere, it will tell you what type of HTML element you clicked on.</p>
+      <div id="walrus-hidden">
+        <p>Let's play  peek-a-boo. <span class="clickable">Click here</span> to see the surprise!</p>
+      </div>
 
-      <p>Look at this cute walrus!</p>
-      <img src="img/walrus.jpg">
+      <div id="walrus-showing">
+        <p>What a cute walrus! <span class="clickable">Click here</span> to hide her again.</p>
+        <img src="img/walrus.jpeg">
+      </div>
+
+      <div id="walrus2-slidein">
+        <p>What this walrus fade. <span class="clickable2">Click here</span> to see the surprise!</p>
+      </div>
+
+      <div id="walrus2-slideout">
+        <p>What a happy pair <span class="clickable2">Click here</span> to hide her again.</p>
+        <img src="img/walrus2.jpg">
+      </div>
+
+      <h1>What's your favorite color? </h1>
+      <p>Click a button to choose what color you'd like this page to be:</p>
+
+      <button class="btn btn-succss" id="green">Green</button>
+      <button class="btn btn-warning" id="yellow">Yellow</button>
+      <button class="btn btn-danger" id="yellow">Red</button>
+
     </div>
-
-    <script src="js/jquery-1.9.1.js"></script>
-    <script src="js/scripts.js"></script>
   </body>
 </html>
